@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6ee19dd3-f345-40d1-a156-f0196881afdd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM datapengguna]]>
+	</queryString>
+	<field name="id_user" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_lengkap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dibuat_pada" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="simpan_data" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="edit_data" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hapus_data" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79" uuid="87e67d8b-0f70-464c-8e99-0e8befe637d4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RIPOT PENGGUNA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="55" height="20" uuid="271d1908-395a-4d0e-9bf0-e2dd75165f7b"/>
+				<text><![CDATA[id_user]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="0" width="55" height="20" uuid="9a05aa43-984b-4a42-929f-71c900fd1c82"/>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="55" height="20" uuid="747c10e1-7244-447e-999e-96ae5a0c190a"/>
+				<text><![CDATA[password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="165" y="0" width="55" height="20" uuid="77a40532-3ac6-4dd5-a42c-26f17a71a393"/>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="55" height="20" uuid="0c6e3b8d-b081-4244-be8e-82c6d562ed40"/>
+				<text><![CDATA[nama_lengkap]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="0" width="55" height="20" uuid="f00ced0d-1a3f-478a-8da7-2feb493bd99b"/>
+				<text><![CDATA[jabatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="55" height="20" uuid="2acff525-acbe-4b9f-80a0-b3d5e14efda4"/>
+				<text><![CDATA[dibuat_pada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="385" y="0" width="55" height="20" uuid="b9ad7ac2-f58d-4074-9320-646340acb0f4"/>
+				<text><![CDATA[simpan_data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="55" height="20" uuid="b64991d5-50db-4b82-a602-add2c2cac0fd"/>
+				<text><![CDATA[edit_data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="495" y="0" width="55" height="20" uuid="9dd63e4b-49ee-451b-8587-6b9d34c17bfb"/>
+				<text><![CDATA[hapus_data]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="55" height="20" uuid="fab3a0eb-c0ed-4c1b-949e-613408e5b4cb"/>
+				<textFieldExpression><![CDATA[$F{id_user}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="0" width="55" height="20" uuid="aa8a2010-bc5a-4290-bca2-2d79b4954533"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="55" height="20" uuid="96445607-f2fc-42a2-ab46-fcc0f475c7cd"/>
+				<textFieldExpression><![CDATA[$F{password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="0" width="55" height="20" uuid="f5d2384e-d210-4a18-98bf-3072826d9557"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="55" height="20" uuid="70067069-7910-46e8-920e-c052e95832fe"/>
+				<textFieldExpression><![CDATA[$F{nama_lengkap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="0" width="55" height="20" uuid="1ea6a555-21d7-4c65-9763-24e0120f4b5e"/>
+				<textFieldExpression><![CDATA[$F{jabatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="55" height="20" uuid="b15c2f34-2b12-4207-9dfe-1c95c78dcf4c"/>
+				<textFieldExpression><![CDATA[$F{dibuat_pada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="0" width="55" height="20" uuid="bbca2f5b-42fa-4985-a943-332d6a632f6b"/>
+				<textFieldExpression><![CDATA[$F{simpan_data}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="55" height="20" uuid="1796257d-1e56-4179-90c0-30afcf8fe7cf"/>
+				<textFieldExpression><![CDATA[$F{edit_data}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="495" y="0" width="55" height="20" uuid="6232d3bd-11be-4e9f-ac1b-2f4c999e34c2"/>
+				<textFieldExpression><![CDATA[$F{hapus_data}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

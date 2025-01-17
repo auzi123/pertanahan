@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="382948ea-786b-453c-96b3-e325bd6083b1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from datasertifikat]]>
+	</queryString>
+	<field name="no_sertifikat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="desa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tahun" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="simpan_data" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="edit_data" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hapus_data" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79" uuid="b91153ea-4dae-449b-8bd2-8ba2d630922f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RIPOT SERTIFIKAT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="69" height="20" uuid="02285c4d-2fb8-4a42-a725-046451cbe327"/>
+				<text><![CDATA[no_sertifikat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="0" width="69" height="20" uuid="5ff74dd1-93b1-4704-ad38-9631251af313"/>
+				<text><![CDATA[desa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="69" height="20" uuid="7b128d7f-4870-4aef-bbcb-37d5e3ea3a80"/>
+				<text><![CDATA[tahun]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="0" width="69" height="20" uuid="2d1508c8-a02d-4636-9e5b-8b4a2b4b10cb"/>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="69" height="20" uuid="8fdea1fb-6e74-4dca-aaad-1bd5f41c440a"/>
+				<text><![CDATA[status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="0" width="69" height="20" uuid="318e0857-41e4-48dc-8e28-87eac87fcaad"/>
+				<text><![CDATA[simpan_data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="69" height="20" uuid="b5a9824c-2ac0-4c55-bf5c-80ee5140f3e9"/>
+				<text><![CDATA[edit_data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="0" width="69" height="20" uuid="fe21890b-e33c-4e2a-9d2b-d4ff355fdf2d"/>
+				<text><![CDATA[hapus_data]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="69" height="20" uuid="e4ef6f22-c100-4ff0-96de-a04f505575a3"/>
+				<textFieldExpression><![CDATA[$F{no_sertifikat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="0" width="69" height="20" uuid="ea0c867e-349c-4dff-a328-9dcc9e9b778c"/>
+				<textFieldExpression><![CDATA[$F{desa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="69" height="20" uuid="67e4f25f-45f9-4758-a7b7-64497e446326"/>
+				<textFieldExpression><![CDATA[$F{tahun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="0" width="69" height="20" uuid="e95dc6e6-303e-42b1-b42b-6bfe75536c88"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="69" height="20" uuid="9d9e7536-5238-4595-a9de-f8beeff6feb9"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="69" height="20" uuid="231c3e8c-c2db-423b-a50f-ac11800707d6"/>
+				<textFieldExpression><![CDATA[$F{simpan_data}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="69" height="20" uuid="34983436-2e17-4c31-ab41-4128f68c517a"/>
+				<textFieldExpression><![CDATA[$F{edit_data}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="0" width="69" height="20" uuid="9a42577e-805f-4ae2-99ef-699655819dc8"/>
+				<textFieldExpression><![CDATA[$F{hapus_data}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
